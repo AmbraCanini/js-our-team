@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#title {
+    text-align: center;
+    margin: 40px auto;
+    padding: 15px;
+    width: 800px;
+}
+
+.main-title {
+    font-family: 'Climate Crisis', sans-serif;
+    font-size: 56px;
+    font-weight: bold;
+    color: #20c997;
+    margin-bottom: 20px;
+}
+
+.main-text {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    color: #6c757d;
+}
