@@ -37,4 +37,29 @@ const teamMembers = [
   }
 ];
 
-const teamList = document.getElementById("team-list");
+renderTeam(teamMembers);
+
+function renderTeam(listmember) {
+  const teamList = document.getElementById("team-list");
+  teamList.innerHTML = "";
+  for (let i = 0; i < listmember.length; i++) {
+    const member = listmember[i];
+    teamList.innerHTML += createMemberCard(member);
+  }
+}
+
+function createMemberCard(member) {
+  return `
+    <div class="card">
+      <div class="card-header">
+        <img src="${member.img}" alt="${member.name}">
+      </div>
+      <div class="card-body">
+        <h3>${member.name}</h3>
+        <p>${member.role}</p>
+        <p>${member.email}</p>
+      </div>
+    </div>
+  `
+}
+
